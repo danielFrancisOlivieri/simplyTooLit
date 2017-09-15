@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIT</title>
+  <link href="css/foundation.css" rel="stylesheet" type="text/css" />
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+
+<style>
+
+#home
+{
+  background-image: url("https://ih0.redbubble.net/image.208539322.1699/flat,800x800,075,f.jpg");
+}
+
+section
+{
+
+}
+img{
+
+  z-index: 1;
+}
+.twentytwenty-container
+{
+  z-index: 0;
+}
+
+p
+{
+  text-align: left;
+  text-indent: 50px;
+  font-size: 1.3em;
+}
+
+#home
+{
+
+color: #2274A5;
+
+}
+
+</style>
+
+  <body>
+
+
+    <header id="main-header" class="side-menu">
+      <nav>
+        <ul>
+
+          <li><a href="#section-1"><span>LIT</span></a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+
+      <section id="section-1">
+
+              <div class="twentytwenty-container">
+                <img src="LITAGAIN/litCrew1.png" />
+                <img src="LITAGAIN/litCrew2.png" />
+              </div>
+              <br>
+              <h1> LIT CREW </h1>
+              <div class="row">
+                <div class="col-sm-4">
+<p>
+They were a band of disorganized, moderately LIT individuals until one Nishan had the common sense to bring them all together. The result? The best groupchat/Donald Knuth fan club Facebook has ever seen.
+</p>
+</div>
+</div>
+      <!--  </div> -->
+      </section>
+
+
+
+
+    </main>
+
+    <ul id="demos-nav">
+      <li><a href="fixed-header.html">Meep</a></li>
+      <li><a href="sidemenu.html">Meep</a></li>
+      <li><a href="lavalamp.html">Meep</a></li>
+    </ul>
+
+    <script src="menuspy.js"></script>
+    <script>
+      var elm = document.querySelector('#main-header');
+      var ms = new MenuSpy(elm);
+    </script>
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+    $(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
+      $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+    });
+    </script>
+  </body>
+</html>
