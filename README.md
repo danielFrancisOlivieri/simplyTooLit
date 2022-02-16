@@ -1,2 +1,2 @@
 # simplyTooLit
-Julia Olivieri is a fuckboi &amp; other such news
+tweets about lit I guess
